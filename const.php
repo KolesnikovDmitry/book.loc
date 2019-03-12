@@ -19,4 +19,24 @@ if (define("REGISTR", 1)) {
 if (defined('NUMBER')) {
     echo NUMBER . '<br>';
 }
-echo php_uname();
+echo php_uname() . '<br>';
+
+//Функция constant();
+//Определяем константу READ
+define('READ', 100);
+//прямое обращение к константе
+echo READ . '<br>';
+//Получение значения константы через функцию constant();
+echo constant('READ'). '<br>';
+
+//Формируем случайное число от 1 до 10
+$index  = mt_rand(1, 31);
+//Формируем имя константы
+$name = define('CNT', $index);
+echo constant('CNT');
+?>
+
+
+
+
+
