@@ -20,3 +20,4 @@ if (defined('NUMBER')) {
     echo NUMBER . '<br>';
 }
 echo php_uname();
+?>
