@@ -29,12 +29,18 @@ echo READ . '<br>';
 //Получение значения константы через функцию constant();
 echo constant('READ'). '<br>';
 
+//Динамические константы
 //Формируем случайное число от 1 до 10
 $index  = mt_rand(1, 31);
 //Формируем имя константы
 $name = define('CNT', $index);
 echo constant('CNT');
 ?>
+<p>Сегодня <?= CNT?> февраль</p>
+<?php
+var_dump(get_defined_constants()) .'<br>';
+?>
+<p>Текущая версия PHP <?= PHP_VERSION?></p>
 
 
 
