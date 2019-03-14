@@ -19,6 +19,8 @@ if ($number % 2) {
 echo '<br>';
 echo 25 ** 0.5;
 echo '<br>';
+echo sqrt(25);
+echo '<br>';
 //Применение инкремента к строке
 $var = 'aaa';
 echo ++$var;
