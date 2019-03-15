@@ -33,3 +33,8 @@ echo '<br>';
 echo 2 & 10;//оператор И двоичное представление
 echo '<br>';
 echo ~47;
+echo '<br>';
+$SOME = "Hell";
+echo $SOME ."o world!";// первый способ
+echo "{$SOME}o world!";// второй способ
+echo "${SOME}o world!";// третьий способ

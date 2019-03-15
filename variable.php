@@ -68,4 +68,48 @@ $second->mind = 100;
 //Выводим оба значения
 echo "First-mind : {$first->mind}, second : {second->mind}";
 
-echo $first;
+
+$st = `command.com/c dir`;
+echo "<pre>$st</pre>";
+
+//Упаковка значений в битовое представление
+//Типы графических примитивов
+define('LINE', 0);
+define('CURVE', 1);
+define('RECTANGLE', 2);
+define('ELLIPSE', 2);
+//Цвет
+define('BLACK', 0);
+define('BLUE', 4);
+define('GREEN', 8);
+define('YELLOW', 12);
+define('ORINGE', 16);
+define('RED', 20);
+define('WHILE', 24);
+
+echo "Желтый прямоугольник в десятичном формате: ";
+echo RECTANGLE | GREEN; // 10
+echo "<br>";
+echo decbin(RECTANGLE | GREEN); // 1010
+echo "<br>";
+
+// Упаковка пяти значение в целое число
+//Прямоугольник
+define('RECTANGLE1', 2);
+//Зеленый
+define('GREEN1', 8);
+//Угол на 45 градусов
+$angle = 45 << 5;
+// Высота 15
+$height = 15 << 14;
+//Ширина 15
+$width = 15 << 23;
+//Результат
+echo RECTANGLE1 | GREEN1 | $angle | $height | $width;
+echo "<br>";
+//Распаковка значений из битового поля
+echo "Примитив: " .      (126076330 & 3) . '<br>';
+echo "Цвет: " .          (126076330 & 28) . '<br>';
+echo "Угол поворота: " . (126076330 & 16352) . '<br>';
+echo "Высота: " .        (126076330 & 8372224) . '<br>';
+echo "Ширина: " .        (126076330 & 4286578688) . '<br>';

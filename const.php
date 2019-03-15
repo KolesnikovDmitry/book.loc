@@ -59,11 +59,20 @@ $index  = mt_rand(1, 31);
 //Формируем имя константы
 $name = define('CNT', $index);
 echo constant('CNT');
+echo "<br>"
 ?>
+
 <p>Сегодня <?= CNT?> февраль</p>
 <?php
 var_dump(get_defined_constants()) .'<br>';
 ?>
 <p>Текущая версия PHP <?= PHP_VERSION?></p>
 
+<?php
+echo "<br>";
+define("pi", 3.14);
+define("str", "Test string");
+echo sin(pi / 4);
+echo "<br>";
+echo str;
 
