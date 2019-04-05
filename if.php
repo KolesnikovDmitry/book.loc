@@ -53,13 +53,13 @@ $hour = (int)strftime('%H');
 
 $welcome = ''; // Инициализируем переменную для приветствия
 
-if ($hour == 0 and $hour < 6) {
+if ($hour < 6) {
     $welcome = 'Доброй ночи';
-} elseif ($hour >= 6 and $hour < 12) {
+} elseif ($hour <= 12) {
     $welcome = 'Доброе утро';
-} elseif ($hour >= 12 and $hour < 18) {
+} elseif ($hour <= 18) {
     $welcome = 'Добрый день';
-} elseif ($hour >= 18 and $hour < 23) {
+} elseif ($hour <= 23) {
     $welcome = 'Добрый вечер';
 } else {
     $welcome = 'Доброй ночи';
