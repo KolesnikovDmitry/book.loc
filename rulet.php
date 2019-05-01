@@ -62,6 +62,56 @@
 //        break;
 //}
 //?>
+
+<html>
+    <head>
+        <style type="text/css">
+            body {
+                color:white;
+                font-size:14px;
+            }
+            .contact {
+                text-align:center;
+                background: none repeat scroll 0% 0% <?= random_html_color(); ?>;
+                padding: 20px 10px;
+                box-shadow: 1px 2px 1px #8FBF73;
+                border-radius: 10px;
+                width:510px;
+            }
+            #submit
+            {
+                background:none repeat scroll 0% 0% <?= random_html_color(); ?>;
+                display: inline-block;
+                padding: 5px 10px;
+                line-height: 1.05em;
+                box-shadow: 1px 2px 3px #8FCB73;
+                border-radius: 8px;
+                border: 1px solid #8FCB73;
+                text-decoration: none;
+                opacity: 0.9;
+                cursor: pointer;
+                color:white;
+            }
+
+        </style>
+    </head>
+    <body>
+                <div class="contact">
+            <h1>Выбор уроков: </h1>
+            <form action="#" method="POST">
+                <input  type="submit" name="submit" id="submit" value="Погнали"></input>
+            </form>
+
+    </body>   
+</html>
+<?php
+
+function random_html_color()
+{
+    return sprintf( '#%02X%02X%02X', rand(0, 255), rand(0, 255), rand(0, 255) );
+}
+
+?>
 <?php
 $items = [
     'Книгу почитать',
