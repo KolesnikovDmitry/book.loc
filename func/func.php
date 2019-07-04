@@ -66,3 +66,36 @@ function my_array_keys($arr){
     }
     return $data;
  }
+?>
+<?php
+$m = date("i");
+
+function ends($m,$v){
+    $m0 = $m % 10;
+    $m1 = $m % 100;
+    if($m1 >= 5 && $m1 <= 20 ) {
+        $res = $v[0];
+    } elseif($m0 == 1) {
+        $res = $v[1];
+    } elseif($m0 >=2 && $m0 <=4) {
+        $res = $v[2];
+    
+    } else {
+       $res = $v[0]; 
+    }
+    return $res;
+}
+$m = ["минут", "минута", "минуты"];
+for($i = 0; $i <= 159; $i++) {
+    echo $i . " " . ends($i, $m) . "\n";
+}
+
+$m = ["товаров", "товар", "товара"];
+for($i = 0; $i <= 159; $i++) {
+    echo $i . " " . ends($i, $m) . "\n";
+}
+$m = ["дней", "день", "дня"];
+for($i = 0; $i <= 365; $i++) {
+    echo $i . " " . ends($i, $m) . "\n";
+}
+
