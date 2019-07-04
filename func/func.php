@@ -98,4 +98,17 @@ $m = ["дней", "день", "дня"];
 for($i = 0; $i <= 365; $i++) {
     echo $i . " " . ends($i, $m) . "\n";
 }
+<?php
 
+function declension_words($n,$words){
+    return ($words[($n=($n=$n%100)>19?($n%10):$n)==1?0 : (($n>1&&$n<=4)?1:2)]);
+}	
+$arWords = array('яблоко','яблока','яблок');
+$arWords2 = array('день','дня','дней');
+$arWords3 = array('комбинация','комбинации','комбинаций');
+
+$num = 1112;
+echo 'Мне нужно '.$num.' '.declension_words($num,$arWords).'<br>';
+echo 'У меня '.$num.' '.declension_words($num,$arWords2).'<br>';
+echo 'У меня получилось '.$num.' '.declension_words($num,$arWords3).'<br>';
+?>
