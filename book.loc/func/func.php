@@ -98,7 +98,7 @@ $m = ["дней", "день", "дня"];
 for($i = 0; $i <= 365; $i++) {
     echo $i . " " . ends($i, $m) . "\n";
 }
-<?php
+
 
 function declension_words($n,$words){
     return ($words[($n=($n=$n%100)>19?($n%10):$n)==1?0 : (($n>1&&$n<=4)?1:2)]);

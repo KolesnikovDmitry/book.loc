@@ -1,0 +1,11 @@
+CREATE TABLE products (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        type TEXT,
+        firstname TEXT,
+        mainname TEXT,
+        title  TEXT,
+        price TEXT,
+        numpages float,
+        playlength  int,
+        discount int,
+        )

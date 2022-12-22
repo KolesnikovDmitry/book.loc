@@ -1,0 +1,15 @@
+{
+    "name": "slash/book.loc",
+    "autoload": {
+        "psr-4": {
+            "Slash\\BookLoc\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dementrum",
+            "email": "dmi56756877@yandex.ru"
+        }
+    ],
+    "require": {}
+}

@@ -1,2 +1,4 @@
-/nbproject/private/
-/nbproject/private
+vendor/
+regexp/
+.idea/
+composer.lock
