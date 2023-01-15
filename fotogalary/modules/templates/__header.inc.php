@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="styles.css" rel="stylesheet" type="text/css">
-    <title><?php echo ((isset($site_title)) ?
+    <title><?php echo((isset($site_title)) ?
             $site_title . ' :: ' : "&#128248;") ?>
         <?php echo \Settings\SITE_NAME ?></title>
 </head>

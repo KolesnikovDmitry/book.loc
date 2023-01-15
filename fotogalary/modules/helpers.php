@@ -1,12 +1,15 @@
 <?php
+
 namespace Helpers;
 
-function get_fragment_path(string $fragment): string {
+function get_fragment_path(string $fragment): string
+{
     global $base_path;
     return $base_path . 'modules/templates/' . $fragment . '.inc.php';
 }
 
-function render(string $template, array $context) {
+function render(string $template, array $context)
+{
     global $base_path;
     extract($context);
     require $base_path . 'modules/templates/' . $template . '.php';

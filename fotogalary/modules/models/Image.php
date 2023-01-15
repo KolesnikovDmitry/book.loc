@@ -1,7 +1,7 @@
 <?php
+
 namespace models;
-class Image implements \Iterator
-{
+class Image implements \Iterator {
     private const DATA = [
         ['src' => '200804282020.jpg', 'desc' => 'Цветы кактуса'],
         ['src' => '200807192032.jpg', 'desc' => 'Пустынная аллея в запущенном парке'],
